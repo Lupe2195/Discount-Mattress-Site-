@@ -11,13 +11,23 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('https://images.unsplash.com/photo-1598300056855-36e7e350c203?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
+      background-color: #f4f4f4;
     }
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.9);
-      min-height: 100vh;
+    .hero {
+      background: url('https://images.unsplash.com/photo-1585559605151-51c00a97976e?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 10px;
     }
     nav {
       background: #2c3e50;
@@ -29,18 +39,6 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-    }
-    header {
-      text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
     }
     .cta {
       background: #27ae60;
@@ -63,9 +61,14 @@
       padding: 2rem;
       background: white;
       margin: 1rem auto;
-      max-width: 900px;
+      max-width: 1000px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
     .section h2 {
       margin-top: 0;
@@ -102,67 +105,76 @@
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <nav>
-      <a href="#why">Why Us</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#visit">Visit</a>
-      <a href="#contact">Contact</a>
-    </nav>
 
-    <header>
-      <h1>DISCOUNT MATTRESS</h1>
-      <p>Sleep Better. Pay Less.</p>
-    </header>
+  <nav>
+    <a href="#why">Why Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div class="cta">
-      📞 Call Now: <strong>(956) 999-1122</strong><br />
-      <a href="tel:9569991122">Tap to Call</a>
-    </div>
-
-    <section class="section" id="why">
-      <h2>Why Choose Discount Mattress?</h2>
-      <ul>
-        <li>Unbeatable Prices</li>
-        <li>Wide Mattress Selection</li>
-        <li>Fast & Free Delivery</li>
-        <li>30-Night Satisfaction Guarantee</li>
-      </ul>
-    </section>
-
-    <section class="section" id="testimonials">
-      <h2>Customer Testimonials</h2>
-      <div class="testimonial">
-        “I found the perfect mattress at a great price. Fast delivery and friendly service!” — Laura M.
-      </div>
-      <div class="testimonial">
-        “Exceptional prices and quality. I'll be recommending Discount Mattress to everyone!” — Carlos R.
-      </div>
-    </section>
-
-    <section class="section" id="visit">
-      <h2>Visit Us</h2>
-      <p>1234 Sleepy Lane, Brownsville, TX 78520</p>
-      <p><strong>Hours:</strong><br />
-        Mon–Fri: 9 AM – 8 PM<br />
-        Sat: 10 AM – 6 PM<br />
-        Sun: Closed
-      </p>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/moqggqov" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="_replyto" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <footer>
-      &copy; 2025 Discount Mattress | (956) 999-1122
-    </footer>
+  <div class="hero">
+    <h1>DISCOUNT MATTRESS</h1>
+    <p>Sleep Better. Pay Less.</p>
   </div>
+
+  <div class="cta">
+    📞 Call Now: <strong>(956) 999-1122</strong><br />
+    <a href="tel:9569991122">Tap to Call</a>
+  </div>
+
+  <section class="section" id="why">
+    <h2>Why Choose Discount Mattress?</h2>
+    <ul>
+      <li>Unbeatable Prices</li>
+      <li>Wide Mattress Selection</li>
+      <li>Fast & Free Delivery</li>
+      <li>30-Night Satisfaction Guarantee</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1616627452032-5b61fd9d2551?auto=format&fit=crop&w=1000&q=80" alt="Mattress options" />
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Showroom Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1585559605151-51c00a97976e?auto=format&fit=crop&w=1000&q=80" alt="Showroom 1">
+    <img src="https://images.unsplash.com/photo-1616627452032-5b61fd9d2551?auto=format&fit=crop&w=1000&q=80" alt="Showroom 2">
+    <img src="https://images.unsplash.com/photo-1603079843210-ec0cb9d3c65f?auto=format&fit=crop&w=1000&q=80" alt="Showroom 3">
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial">
+      “I found the perfect mattress at a great price. Fast delivery and friendly service!” — Laura M.
+    </div>
+    <div class="testimonial">
+      “Exceptional prices and quality. I'll be recommending Discount Mattress to everyone!” — Carlos R.
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <h2>Visit Us</h2>
+    <p>1234 Sleepy Lane, Brownsville, TX 78520</p>
+    <p><strong>Hours:</strong><br />
+      Mon–Fri: 9 AM – 8 PM<br />
+      Sat: 10 AM – 6 PM<br />
+      Sun: Closed
+    </p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/moqggqov" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Discount Mattress | (956) 999-1122
+  </footer>
+
 </body>
 </html>
