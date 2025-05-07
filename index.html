@@ -3,178 +3,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discount Mattress - Top quality mattresses at unbeatable prices in the Rio Grande Valley. Call now: 956-999-1122" />
-  <title>Discount Mattress | Affordable Comfort</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discount Mattress | Brownsville, TX</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
     }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1585559605151-51c00a97976e?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-      background-size: cover;
-      padding: 100px 20px;
+    header {
+      background: linear-gradient(to right, #007BFF, #28A745);
       color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    .hero h1 {
-      font-size: 3rem;
+    header h1 {
       margin: 0;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      font-size: 2.5rem;
     }
-    .hero p {
-      font-size: 1.5rem;
-      margin-top: 10px;
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
     }
-    nav {
-      background: #2c3e50;
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #007BFF;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .product {
+      flex: 1 1 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
       padding: 1rem;
       text-align: center;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .cta {
-      background: #27ae60;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 1.2rem;
-    }
-    .cta a {
-      display: inline-block;
-      margin-top: 1rem;
-      background: white;
-      color: #27ae60;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
+    .product img {
+      max-width: 100%;
+      height: auto;
       border-radius: 5px;
     }
-    .section {
-      padding: 2rem;
-      background: white;
-      margin: 1rem auto;
-      max-width: 1000px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .section img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    .section h2 {
-      margin-top: 0;
+    .testimonials {
+      background-color: #f9f9f9;
+      padding: 2rem 1rem;
     }
     .testimonial {
+      margin-bottom: 1rem;
       font-style: italic;
-      margin: 1rem 0;
     }
-    form {
+    .contact-form {
       display: flex;
       flex-direction: column;
+      gap: 0.5rem;
     }
-    form input, form textarea {
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border-radius: 5px;
+    .contact-form input, .contact-form textarea {
+      padding: 0.5rem;
       border: 1px solid #ccc;
-    }
-    form button {
-      padding: 0.75rem;
-      border: none;
-      background: #27ae60;
-      color: white;
-      font-weight: bold;
       border-radius: 5px;
+      width: 100%;
+    }
+    .contact-form button {
+      padding: 0.75rem;
+      background-color: #28A745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
       cursor: pointer;
     }
     footer {
+      background-color: #007BFF;
+      color: white;
       text-align: center;
       padding: 1rem;
-      background: #2c3e50;
-      color: white;
+    }
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Discount Mattress</h1>
+    <p>Quality Mattresses at Unbeatable Prices</p>
+    <a href="#contact" class="cta-button">Contact Us</a>
+  </header>
 
-  <nav>
-    <a href="#why">Why Us</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#visit">Visit</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="hero">
-    <h1>DISCOUNT MATTRESS</h1>
-    <p>Sleep Better. Pay Less.</p>
-  </div>
-
-  <div class="cta">
-    📞 Call Now: <strong>(956) 999-1122</strong><br />
-    <a href="tel:9569991122">Tap to Call</a>
-  </div>
-
-  <section class="section" id="why">
-    <h2>Why Choose Discount Mattress?</h2>
-    <ul>
-      <li>Unbeatable Prices</li>
-      <li>Wide Mattress Selection</li>
-      <li>Fast & Free Delivery</li>
-      <li>30-Night Satisfaction Guarantee</li>
-    </ul>
-    <img src="https://images.unsplash.com/photo-1616627452032-5b61fd9d2551?auto=format&fit=crop&w=1000&q=80" alt="Mattress options" />
-  </section>
-
-  <section class="section" id="gallery">
-    <h2>Showroom Gallery</h2>
-    <img src="https://images.unsplash.com/photo-1585559605151-51c00a97976e?auto=format&fit=crop&w=1000&q=80" alt="Showroom 1">
-    <img src="https://images.unsplash.com/photo-1616627452032-5b61fd9d2551?auto=format&fit=crop&w=1000&q=80" alt="Showroom 2">
-    <img src="https://images.unsplash.com/photo-1603079843210-ec0cb9d3c65f?auto=format&fit=crop&w=1000&q=80" alt="Showroom 3">
-  </section>
-
-  <section class="section" id="testimonials">
-    <h2>Customer Testimonials</h2>
-    <div class="testimonial">
-      “I found the perfect mattress at a great price. Fast delivery and friendly service!” — Laura M.
-    </div>
-    <div class="testimonial">
-      “Exceptional prices and quality. I'll be recommending Discount Mattress to everyone!” — Carlos R.
+  <section class="section">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Mattress 1">
+        <h3>Comfort Sleep</h3>
+        <p>Experience unparalleled comfort with our Comfort Sleep range.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Mattress 2">
+        <h3>Dream Rest</h3>
+        <p>Wake up refreshed every morning with Dream Rest mattresses.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Mattress 3">
+        <h3>Eco Foam</h3>
+        <p>Eco-friendly and supportive, perfect for sustainable living.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="visit">
-    <h2>Visit Us</h2>
-    <p>1234 Sleepy Lane, Brownsville, TX 78520</p>
-    <p><strong>Hours:</strong><br />
-      Mon–Fri: 9 AM – 8 PM<br />
-      Sat: 10 AM – 6 PM<br />
-      Sun: Closed
-    </p>
+  <section class="section testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      "Best sleep I've had in years! The staff was friendly and helpful." – Maria G.
+    </div>
+    <div class="testimonial">
+      "Affordable prices and great quality. Highly recommend!" – John S.
+    </div>
+    <div class="testimonial">
+      "Quick delivery and excellent customer service." – Alex R.
+    </div>
   </section>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/moqggqov" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required/>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Discount Mattress | (956) 999-1122
+    <p>Discount Mattress | 2115 Southmost Road, Brownsville, TX 78521</p>
+    <p>Phone: 956-444-1122 | Established in 2015</p>
   </footer>
-
 </body>
 </html>
